@@ -16,4 +16,5 @@ let myNewVariable: MyInterface = {
   myString: 'ciao',
 };
 
+// ciao
 console.log('myNewVariable = ', myNewVariable);
