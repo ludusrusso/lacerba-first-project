@@ -10,5 +10,8 @@
     "lacerba"
   ],
   "author": "ludusrusso",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "url": "https://github.com/ludusrusso/lacerba-first-project"
+  }
 }
