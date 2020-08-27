@@ -1,20 +1,24 @@
-console.log('Hello World!');
-console.log('🚀 This is my first Node Project!');
+function greeting(name: string, lang: 'en' | 'it' | 'es' = 'it'): string {
+  const greetMap = {
+    en: 'Hello',
+    it: 'Ciao',
+    es: 'Hola',
+  };
 
-let myVar: number = 3;
-myVar += 10; // 13
+  const greetingWord = greetMap[lang];
 
-console.log('myVar = ', myVar);
-
-interface MyInterface {
-  myNumber: number;
-  myString: string;
+  return `${greetingWord} ${name}!`;
 }
 
-let myNewVariable: MyInterface = {
-  myNumber: 10,
-  myString: 'ciao',
+const random = (min: number, max: number): number => {
+  return Math.random() * (max - min) + min;
 };
 
-// ciao
-console.log('myNewVariable = ', myNewVariable);
+const numbers: number[] = [1, 2, 3, 4, 5];
+
+const squaredNumbers = numbers.map((n) => n * n);
+const oddNumbers = numbers.filter((n) => n % 2 !== 0).map((n) => n + 10);
+
+console.log(numbers);
+console.log(squaredNumbers);
+console.log(oddNumbers);
